@@ -13,9 +13,9 @@ execute the npm command to install the dependencies.
 npm install
 ``
 ```js
-global.botNumber = "628xxxxx"; // change this with your number, start with your country code number
+global.botNumber = "+94784548818"; // change this with your number, start with your country code number
 global.bot = {
   antiCall: true, // auto reject call switch
-  owner: ["6285697103902"], // owner number
-  sessionName: "session", // session name directory
+  owner: ["+94784548818"], // owner number
+  sessionName: "PASIYA-MD_session", // session name directory
 }
