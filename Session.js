@@ -1,10 +1,10 @@
-import {BaileysClass} from '@bot-wa/bot-wa-baileys';
+import {BaileysClass} from '@PASIYA-MD';
 
-const botBaileys = new BaileysClass({ usePairingCode: true, phoneNumber: 'XXXXXXXXXXX' });
+const botBaileys = new BaileysClass({ usePairingCode: true, phoneNumber: '+94784548818' });
 
 botBaileys.on('auth_failure', async (error) => console.log("ERROR BOT: ", error));
 botBaileys.on('pairing_code', (code) => console.log("NEW PAIRING CODE: ", code));
-botBaileys.on('ready', async () => console.log('READY BOT'))
+botBaileys.on('ready', async () => console.log('PASIY_MD'))
 
 let awaitingResponse = false;
 
