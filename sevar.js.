@@ -1,0 +1,31 @@
+```js
+const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+const config = require('./config');
+
+app.get('/', (req, res) => {
+  res.send(`
+    <h2>🟢 PASIYA-MD Bot Backend Running</h2>
+    <p><strong>Owner Name:</strong> PASIYA-MD</p>
+    <p><strong>Owner Number:</strong> +94 76 635 9869</p>
+    <p><strong>Session ID:</strong> config.SESSION_ID || 'Not set'</p>
+    <p><strong>Join Our Channel:</strong> <a href="{config.WACHLINK}" target="_blank">config.WACHLINK</a></p>
+  `);
+);
+
+app.get('/status', (req, res) => 
+  res.json(
+    status: 'online',
+    owner: 'PASIYA-MD',
+    number: '+94 76 635 9869',
+    session: config.SESSION_ID || 'not_set',
+    powered_by: 'Express.js + Node.js'
+  );
+);
+
+app.listen(PORT, () => 
+  console.log(`✅ PASIYA-MD backend running on http://localhost:{PORT}`);
+});
+``
